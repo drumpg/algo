@@ -83,12 +83,12 @@ class StackWithMin:
 # Задание 4.8.
 # Асимптотическая сложность O(1).
 # Пространственная сложность O(1).
-class Node:
+class Node_1:
     def __init__(self, value) -> None:
         self.val = value
         self.next = None
 
-class Stack:
+class StackAvg:
     def __init__(self) -> None:
         self.stack = None
         self.len = 0
@@ -109,7 +109,7 @@ class Stack:
         return tmp.val
 
     def push(self, value) -> None:
-        node = Node(value)
+        node = Node_1(value)
         node.next = self.stack
         self.stack = node
         self.len += 1
