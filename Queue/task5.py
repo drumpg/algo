@@ -33,6 +33,10 @@ class Queue:
         tmp = self.head
         self.head = self.head.next
         self.len -= 1
+        
+        if tmp == self.tail:
+            self.tail = None
+        
         return tmp.value
 
     def size(self) -> int:
