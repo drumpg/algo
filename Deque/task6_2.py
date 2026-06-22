@@ -88,8 +88,9 @@ class DequeWithMin:
 
 # Задание 7.5.
 # Асимптотическая оценка амортизированная O(1) - т.к. в редком случае придется увеличивать или уменьшать емкость масссива, что занимает O(n).
+# Пространственная оценка O(n).
 import ctypes
-class Deque:
+class DequeDynArr:
     def __init__(self):
         self.count = 0
         self.capacity = 16
